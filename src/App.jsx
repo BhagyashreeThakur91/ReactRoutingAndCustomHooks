@@ -6,6 +6,9 @@ import NotFoundPage from './pages/notFound';
 import Layout from './components';
 import ReactHookFormExamplePage from './pages/react-hook-form-example';
 import HooksUseRefCallbackMemo from './pages/hooks-useRef-callbackandMemo';
+import UseMemoExample from './pages/use-memo-example';
+import UseCallbackExample from './pages/useCallbackExample';
+import ReactQueryExample from './pages/react-query';
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -34,6 +37,18 @@ function CustomRoutes() {
     {
       path : '/hooks',
       element : <HooksUseRefCallbackMemo/>
+    },
+    {
+      path : '/use-memo',
+      element : <UseMemoExample />
+    },
+    {
+      path : '/use-callback',
+      element : <UseCallbackExample />
+    },
+    {
+      path : '/react-query',
+      element : <ReactQueryExample />
     }
   ]);
   return element;
